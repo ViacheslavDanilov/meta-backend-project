@@ -6,12 +6,12 @@ Little Lemon Capstone Project — API Endpoints to Test
 
 2. Menu API Endpoints (GET, POST, PUT, DELETE):
    /restaurant/menu/
-   /restaurant/menu/<int:pk>
-   /restaurant/menu/items
+   /restaurant/menu/<id>/   (for example /restaurant/menu/1/)
+   /restaurant/menu/items/
 
 3. Table Booking API Endpoints (Requires Token Authentication - GET, POST, PUT, DELETE):
    /restaurant/booking/tables/
-   /restaurant/booking/tables/<int:pk>/
+   /restaurant/booking/tables/<id>/   (for example /restaurant/booking/tables/1/)
 
 4. User Registration & Token Authentication Endpoints (Djoser & DRF AuthToken):
    /auth/users/

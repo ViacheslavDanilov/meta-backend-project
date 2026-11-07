@@ -8,7 +8,7 @@ Capstone project for the Meta Back-End Developer course. It's a Django + Django 
 - Menu API (list, create, update, delete menu items)
 - Booking API (same operations for table reservations, login required)
 - User registration and token login using Djoser and DRF's token auth
-- Unit tests for the Menu model and the Menu view
+- Unit tests for the Menu and Booking models and views (`littlelemon/tests/test_models.py`, `test_views.py`)
 
 ## API paths to test
 
@@ -16,7 +16,7 @@ Capstone project for the Meta Back-End Developer course. It's a Django + Django 
 |---|---|---|
 | `/restaurant/` | GET | Home page |
 | `/restaurant/menu/` | GET, POST | List or add menu items |
-| `/restaurant/menu/<id>` | GET, PUT, PATCH, DELETE | Single menu item |
+| `/restaurant/menu/<id>/` | GET, PUT, PATCH, DELETE | Single menu item (works with or without the trailing slash) |
 | `/restaurant/booking/tables/` | GET, POST | Needs a token |
 | `/restaurant/booking/tables/<id>/` | GET, PUT, PATCH, DELETE | Needs a token |
 | `/auth/users/` | GET, POST | POST registers a new user |
